@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato&display=swap');
+
+@mixin font-inconsolata {
+  font-family: 'Inconsolata', monospace;
+}
+
+@mixin font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+@mixin font-primary {
+  @include font-lato();
+}
+
+@mixin font-accent {
+  @include font-inconsolata();
+}
