@@ -1,4 +1,6 @@
 .footer {
+  @include flex-container();
   @include font-accent;
   text-align: center;
+  text-transform: uppercase;
 }

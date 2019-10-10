@@ -1,10 +1,10 @@
 .nav {
-  background: $color-party-girl;
   text-align: center;
   overflow: auto;
+  border-top: 5px solid $color-party-girl;
 
   &__title {
-
+    color: $color-party-girl;
   }
 
   ul {
@@ -13,8 +13,10 @@
     padding: 0;
 
     li {
-      display: inline-block;
-      padding: 1em 0.5em;
+      @include breakpoint() {
+        display: inline-block;
+        padding: 1em 0.5em;
+      }
 
       a {
         @include font-accent();
