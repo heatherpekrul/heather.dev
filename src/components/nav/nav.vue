@@ -14,6 +14,9 @@
       <li>
         <router-link to="/resume">Resume</router-link>
       </li>
+      <li>
+        <router-link to="/contact">Contact</router-link>
+      </li>
     </ul>
   </nav>
 </template>

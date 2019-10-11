@@ -20,17 +20,10 @@
 
       a {
         @include font-accent();
-        background: rgba($color-black, 0.2);
-        transition: background-color 0.2s;
         display: block;
         color: $color-white;
-        text-decoration: none;
         text-transform: uppercase;
         padding: 0.5em 1em;
-
-        &:hover {
-          background: rgba($color-black, 0.5);
-        }
       }
     }
   }
