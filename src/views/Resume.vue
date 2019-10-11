@@ -12,7 +12,9 @@
         <li>Developed complex, highly flexible applications</li>
         <li>Gathered requirements from stakeholders and implemented their requirements into software</li>
         <li>Performed testing of software and websites to ensure compatibility with various devices, browsers, operating systems</li>
-        <li>Developed custom Wordpress plugins, scripts, and themes</li>
+        <li>Developed custom and localized Wordpress plugins, scripts, and themes for the Garmin blog</li>
+        <li>Ensured compliance with accessibility standards</li>
+        <li>Created reusable packages to help enforce code and style consistency across Garmin web properties</li>
       </ul>
     </Employer>
 
