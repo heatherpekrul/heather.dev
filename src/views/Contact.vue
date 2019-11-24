@@ -2,11 +2,11 @@
   <div class="contact container">
     <h1>Contact</h1>
 
-    <div class="message message--success" v-show="success">
+    <div class="message message--success" v-if="success">
       Your form was successfully submitted.
     </div>
 
-    <div class="message message--error" v-show="!success && success !== null">
+    <div class="message message--error" v-if="!success && success !== null">
       Your form could not be submitted. Please try again.
     </div>
 
