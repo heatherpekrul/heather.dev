@@ -83,10 +83,10 @@ export default {
       formData.append('recaptchaToken', recaptchaToken);
 
       Axios.post(formProcessorUrl, formData)
-        .then(function (response) {
+        .then(() => {
           vm.success = true;
         })
-        .catch(function (response) {
+        .catch(() => {
           vm.success = false;
         });
     },
