@@ -1,20 +1,26 @@
 <template>
   <div class="resume container">
     <h1>Resume</h1>
+
+    <h2>Work Experience</h2>
     <Employer
       name="Garmin"
       url="https://www.garmin.com"
+      :startDate="new Date('2016-01-11T12:00:00Z')"
+      :endDate="false"
       title="Software Engineer"
-      :tags="['JavaScript', 'CSS', 'SASS', 'HTML', 'Node.js', 'PHP',
+      :tags="['JavaScript', 'Vue', 'CSS', 'SASS', 'HTML', 'Node.js', 'PHP',
         'Wordpress', 'SEO', 'Accessibility', 'Express']"
     >
       <ul>
         <li>Project lead for the Garmin Support Center's front end</li>
+        <li>Led effort to create a component library for product support applications, and worked
+          with other teams to collaborate on a company-wide component library</li>
         <li>Developed complex, highly flexible applications</li>
         <li>Gathered requirements from stakeholders and implemented their
           requirements into software</li>
         <li>Performed testing of software and websites to ensure compatibility
-          with various devices, browsers, operating systems</li>
+          with various devices, browsers, and operating systems</li>
         <li>Developed custom and localized Wordpress plugins, scripts, and
           themes for the Garmin blog</li>
         <li>Ensured compliance with accessibility standards</li>
@@ -26,6 +32,8 @@
     <Employer
       name="Lifted Logic"
       url="https://liftedlogic.com"
+      :startDate="new Date('2014-09-01T12:00:00Z')"
+      :endDate="new Date('2015-12-01T12:00:00Z')"
       title="Developer, Developer Supervisor"
       :tags="['Wordpress', 'JavaScript', 'CSS', 'SASS', 'HTML', 'Node.js',
         'PHP', 'SEO', 'jQuery', 'AngularJS', 'MongoDB', 'Express']"
@@ -50,6 +58,8 @@
     <Employer
       name="JNT Company, LLC"
       url="https://jntcompany.com"
+      :startDate="new Date('2012-07-01T12:00:00Z')"
+      :endDate="new Date('2014-09-01T12:00:00Z')"
       title="Developer"
       :tags="['CodeIgniter', 'PHP', 'CSS', 'LESS', 'JavaScript', 'jQuery', 'MySQL', 'SEO', 'HTML']"
     >
@@ -80,6 +90,8 @@
     <Employer
       name="Se2, Inc."
       url="http://www.se2.com"
+      :startDate="new Date('2011-06-01T12:00:00Z')"
+      :endDate="new Date('2012-07-01T12:00:00Z')"
       title="Programmer Analyst"
       :tags="['ASP.NET', 'CSS', 'HTML', 'jQuery', 'JavaScript', 'Oracle', 'T-SQL', 'VB.NET']"
     >
@@ -96,6 +108,8 @@
     <Employer
       name="KSU Housing &amp; Dining Services InfoTech"
       url="http://housing.k-state.edu"
+      :startDate="new Date('2008-09-01T12:00:00Z')"
+      :endDate="new Date('2011-06-01T12:00:00Z')"
       title="Developer"
       :tags="['PHP', 'CSS', 'HTML', 'JavaScript', 'MySQL', 'VBA', 'VB.NET']"
     >
@@ -114,6 +128,8 @@
     <Employer
       name="Environmental Protection Agency Radiation and Indoor Environments National Laboratory"
       url="http://www.epa.gov"
+      :startDate="new Date('2010-05-01T12:00:00Z')"
+      :endDate="new Date('2010-08-01T12:00:00Z')"
       title="Intern"
       :tags="['C++']"
     >
@@ -128,6 +144,8 @@
     <Employer
       name="City of Topeka, ERP Department"
       url="http://www.topeka.org"
+      :startDate="new Date('2008-05-01T12:00:00Z')"
+      :endDate="new Date('2008-08-01T12:00:00Z')"
       title="Intern"
       :tags="['Oracle']"
     >
@@ -136,6 +154,18 @@
         <li>Assisted with creating project documentation and design specifications</li>
       </ul>
     </Employer>
+
+    <div class="education">
+      <h2>Education</h2>
+      <h3>
+        <a href="https://www.k-state.edu" target="_blank">
+          Kansas State University
+        </a>
+      </h3>
+      <div class="education__description">
+        Bachelor of Science in Information Systems, 2011
+      </div>
+    </div>
   </div>
 </template>
 
@@ -149,3 +179,15 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+@import '@/assets/scss';
+
+.education {
+  border-top: 5px solid $color-party-girl;
+
+  &__description {
+
+  }
+}
+</style>

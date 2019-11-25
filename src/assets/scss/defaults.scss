@@ -26,14 +26,12 @@ body {
 }
 
 a {
-  @include font-accent();
   color: $color-party-girl;
   text-decoration: none;
-  text-transform: uppercase;
   background: rgba($color-black, 0.2);
   transition: background-color 0.2s;
   display: inline-block;
-  padding: 0 0.5em;
+  padding: 0 0.25em;
 
   &:hover {
     background: rgba($color-black, 0.5);

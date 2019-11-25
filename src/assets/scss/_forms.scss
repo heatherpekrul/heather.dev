@@ -39,8 +39,8 @@ form {
     width: auto;
     text-transform: uppercase;
     background: transparent;
-    color: $color-party-girl;
-    border: 1px solid $color-party-girl;
+    color: $color-magenta;
+    border: 1px solid $color-magenta;
     padding: 1em 2em;
     border-radius: 0.25em;
     transition: color 0.2s, background 0.2s;
@@ -48,6 +48,7 @@ form {
     &:hover {
       cursor: pointer;
       background: $color-party-girl;
+      border-color: $color-party-girl;
       color: $color-white;
     }
   }
