@@ -4,4 +4,17 @@
   text-align: center;
   text-transform: uppercase;
   border-top: 1px solid rgba($color-white, 0.2);
+  font-size: 0.9em;
+
+  &__social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 0.25em;
+      padding: 0;
+    }
+  }
 }

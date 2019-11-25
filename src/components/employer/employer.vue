@@ -20,6 +20,23 @@
         {{ tag }}
       </li>
     </ul>
+
+    <template v-if="projects">
+      <h4>Featured Projects</h4>
+      <ul class="projects">
+        <li
+          v-for="(project, index) in projects"
+          :key="index"
+          :style="{backgroundImage: `url(${require(`../../assets/images/${project.image}`)})`}"
+          >
+          <a :href="project.url" target="_blank">
+            <span>
+              {{ project.title }}
+            </span>
+          </a>
+        </li>
+      </ul>
+    </template>
   </div>
 </template>
 
@@ -52,6 +69,9 @@ export default {
     endDate: {
       type: [Date, Boolean],
       required: true,
+    },
+    projects: {
+      type: [Array, Boolean],
     },
   },
   computed: {

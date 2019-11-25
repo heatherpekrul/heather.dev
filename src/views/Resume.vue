@@ -11,6 +11,18 @@
       title="Software Engineer"
       :tags="['JavaScript', 'Vue', 'CSS', 'SASS', 'HTML', 'Node.js', 'PHP',
         'Wordpress', 'SEO', 'Accessibility', 'Express']"
+      :projects="[
+        {
+          title: 'Blog',
+          url: 'https://www.garmin.com/en-US/blog/',
+          image: 'garmin-blog.png',
+        },
+        {
+          title: 'Support Center',
+          url: 'https://support.garmin.com/en-US/',
+          image: 'garmin-support-center.png',
+        },
+      ]"
     >
       <ul>
         <li>Project lead for the Garmin Support Center's front end</li>
@@ -37,6 +49,43 @@
       title="Developer, Developer Supervisor"
       :tags="['Wordpress', 'JavaScript', 'CSS', 'SASS', 'HTML', 'Node.js',
         'PHP', 'SEO', 'jQuery', 'AngularJS', 'MongoDB', 'Express']"
+      :projects="[
+        {
+          title: 'Big Red Decorative Concrete',
+          url: 'http://bigreddecorativeconcrete.com/',
+          image: 'big-red-decorative-concrete.jpg',
+        },
+        {
+          title: 'CottageCare',
+          url: 'http://bigreddecorativeconcrete.com/',
+          image: 'cottage-care-preview.jpg',
+        },
+        {
+          title: 'Novak Birks',
+          url: 'http://novakbirks.com/',
+          image: 'novak-birks-preview.jpg',
+        },
+        {
+          title: 'Rusk-Panola Transmission Project',
+          url: 'http://ruskpanolatransmissionproject.com/',
+          image: 'rusk-panola-preview.jpg',
+        },
+        {
+          title: 'Tour de BBQ',
+          url: 'http://tourdebbq.com/',
+          image: 'tour-de-bbq-preview.jpg',
+        },
+        {
+          title: 'Show Me KC Schools',
+          url: 'http://showmekcschools.org/',
+          image: 'show-me-kc-schools-preview.jpg',
+        },
+        {
+          title: 'Midwest Land Group',
+          url: 'http://midwestlandgroup.com/',
+          image: 'midwest-land-group-preview.jpg',
+        },
+      ]"
     >
       <ul>
         <li>Supervised a team of developers to complete time-sensitive
@@ -62,6 +111,18 @@
       :endDate="new Date('2014-09-01T12:00:00Z')"
       title="Developer"
       :tags="['CodeIgniter', 'PHP', 'CSS', 'LESS', 'JavaScript', 'jQuery', 'MySQL', 'SEO', 'HTML']"
+      :projects="[
+        {
+          title: 'Paramour Coffee',
+          url: 'https://www.paramourcoffee.com/',
+          image: 'paramour-coffee-preview.jpg',
+        },
+        {
+          title: 'The Pathfinder',
+          url: 'http://www.thepathfinder.net/',
+          image: 'the-pathfinder-preview.jpg',
+        },
+      ]"
     >
       <ul>
         <li>Converted web designs from PSD files to HTML, CSS, and jQuery
@@ -94,6 +155,7 @@
       :endDate="new Date('2012-07-01T12:00:00Z')"
       title="Programmer Analyst"
       :tags="['ASP.NET', 'CSS', 'HTML', 'jQuery', 'JavaScript', 'Oracle', 'T-SQL', 'VB.NET']"
+      :projects="false"
     >
       <ul>
         <li>Used VB.NET and T-SQL to create a batch processor of commission
@@ -112,6 +174,7 @@
       :endDate="new Date('2011-06-01T12:00:00Z')"
       title="Developer"
       :tags="['PHP', 'CSS', 'HTML', 'JavaScript', 'MySQL', 'VBA', 'VB.NET']"
+      :projects="false"
     >
       <ul>
         <li>Led a team to develop a modular applications platform</li>
@@ -132,6 +195,7 @@
       :endDate="new Date('2010-08-01T12:00:00Z')"
       title="Intern"
       :tags="['C++']"
+      :projects="false"
     >
       <ul>
         <li>Rewrote a broken C++ function that handled conversion of local
@@ -148,6 +212,7 @@
       :endDate="new Date('2008-08-01T12:00:00Z')"
       title="Intern"
       :tags="['Oracle']"
+      :projects="false"
     >
       <ul>
         <li>Performed vendor database clean up and file conversions</li>

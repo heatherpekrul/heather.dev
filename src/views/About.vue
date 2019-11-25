@@ -2,6 +2,8 @@
   <div class="about container">
     <h1>About</h1>
 
+    <img src="../assets/images/dog-pals.jpg" alt="Heather and Evey">
+
     <p>My name is Heather Pekrul and I'm a software engineer. I specialize in web technologies,
       but I've dabbled in others as well. This site is geared towards those endeavors, but my
       other interests are linked on <a href="https://heatherpekrul.com">my personal site</a>.</p>
@@ -69,3 +71,21 @@
       be the best tomorrow. The web changes too quickly for any of us to stay the same.</p>
   </div>
 </template>
+
+<style lang="scss" scoped>
+@import '@/assets/scss';
+
+.about {
+  @include clearfix();
+
+  img {
+    box-shadow: 0 0 1em 0 rgba($color-black,0.5);
+
+    @include breakpoint() {
+      float: left;
+      width: 25em;
+      margin-right: 1em;
+    }
+  }
+}
+</style>
