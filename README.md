@@ -1,5 +1,7 @@
 # heather.dev
 
+[![Build Status](https://travis-ci.com/heatherpekrul/heather.dev.svg?branch=master)](https://travis-ci.com/heatherpekrul/heather.dev)
+
 ## Project setup
 ```
 yarn install
