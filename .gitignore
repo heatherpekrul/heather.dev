@@ -19,3 +19,7 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# No No Files
+deploy_heatherdev_rsa.pub
+deploy_heatherdev_rsa

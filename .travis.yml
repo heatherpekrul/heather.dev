@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+- node
+cache: npm
+script: npm run build
+before_deploy:
+- openssl aes-256-cbc -K $encrypted_0ae2cd8cb73a_key -iv $encrypted_0ae2cd8cb73a_iv
+  -in deploy_heatherdev_rsa.enc -out /tmp/deploy_heatherdev_rsa -d
+- eval "$(ssh-agent -s)"
+- chmod 600 /tmp/deploy_heatherdev_rsa
+- ssh-add /tmp/deploy_heatherdev_rsa
+- echo -e "Host ${DEPLOY_HOST}\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+deploy:
+  provider: script
+  skip-cleanup: true
+  script: rsync -r --quiet --delete-after ${TRAVIS_BUILD_DIR}/dist/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIRECTORY}
+  on:
+    branch: master
+env:
+  global:
+  - PRODUCTION=true
