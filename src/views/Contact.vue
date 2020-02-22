@@ -75,11 +75,6 @@ export default {
       const vm = this;
       this.$refs.recaptcha.reset();
 
-      Object.keys(this.form).forEach((k) => {
-        this.form[k] = '';
-      });
-      this.$refs.contactForm.reset();
-
       const formProcessorUrl = 'https://heather.dev/forms/contact.php';
 
       const formData = new FormData();
@@ -91,6 +86,11 @@ export default {
       Axios.post(formProcessorUrl, formData)
         .then(() => {
           vm.success = true;
+
+          Object.keys(this.form).forEach((k) => {
+            this.form[k] = '';
+          });
+          this.$refs.contactForm.reset();
         })
         .catch(() => {
           vm.success = false;
