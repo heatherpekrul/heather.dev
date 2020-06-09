@@ -27,9 +27,12 @@
         <li
           v-for="(project, index) in projects"
           :key="index"
-          :style="{backgroundImage: `url(${require(`../../assets/images/${project.image}`)})`}"
+        >
+          <a
+            :href="project.url"
+            target="_blank"
+            :style="{backgroundImage: `url(${require(`../../assets/images/${project.image}`)})`}"
           >
-          <a :href="project.url" target="_blank">
             <span>
               {{ project.title }}
             </span>

@@ -43,25 +43,33 @@
   }
 
   .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     list-style: none;
     margin: 0;
     padding: 0;
 
     li {
-      display: inline-block;
-      vertical-align: top;
-      width: calc(25% - 52.5px);
+      flex: 0 1 100%;
+      margin: 15px;
       text-align: center;
-      margin-right: 30px;
-      margin-bottom: 30px;
       position: relative;
-      padding: 15px;
-      background-size: cover;
-      background-repeat: no-repeat;
+
+      @media (min-width: 480px) {
+        flex-basis: calc(50% - 30px);
+      }
+
+      @media (min-width: 640px) {
+        flex-basis: calc(25% - 30px);
+      }
 
       a {
         display: block;
         background: none;
+        padding: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
 
         &:hover {
           span {

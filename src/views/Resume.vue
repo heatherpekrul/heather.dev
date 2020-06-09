@@ -51,6 +51,11 @@
         'PHP', 'SEO', 'jQuery', 'AngularJS', 'MongoDB', 'Express']"
       :projects="[
         {
+          title: 'SAB Homes',
+          url: 'https://sabhomes.com/',
+          image: 'sab-homes-preview.jpg',
+        },
+        {
           title: 'Big Red Decorative Concrete',
           url: 'http://bigreddecorativeconcrete.com/',
           image: 'big-red-decorative-concrete.jpg',
@@ -250,9 +255,5 @@ export default {
 
 .education {
   border-top: 5px solid $color-party-girl;
-
-  &__description {
-
-  }
 }
 </style>
