@@ -9,10 +9,10 @@ import PageHeader from '../components/PageHeader.vue';
     </PageHeader>
 
     <div class="container">
-        <img srcset="dog-pals-sm.jpg 480w,
-               dog-pals-md.jpg 768w"
+        <img srcset="/dog-pals-sm.jpg 480w,
+               /dog-pals-md.jpg 768w"
         sizes="480px, 768px"
-        src="dog-pals-md.jpg"
+        src="/dog-pals-md.jpg"
         alt="Heather Pekrul with Evey, a corgi dog">
 
         <p>
