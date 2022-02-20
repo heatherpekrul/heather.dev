@@ -44,33 +44,6 @@ window.addEventListener('scroll', reveal);
 </template>
 
 <style scoped lang="scss">
-.intro-container {
-  font-size: 1.5rem;
-  padding: 3rem;
-  min-height: 50vh;
-  line-height: 1;
-  position: relative;
-
-  @media (min-width: 480px) {
-    font-size: 2rem;
-  }
-
-  @media (min-width: 768px) {
-    font-size: 3rem;
-    min-height: 75vh;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: 5rem;
-    min-height: 85vh;
-  }
-
-  h1 {
-    z-index: +1;
-    position: relative;
-  }
-}
-
 .reveal {
   opacity: 0;
   transition: 2s all ease;
@@ -88,11 +61,26 @@ window.addEventListener('scroll', reveal);
     }
   }
 }
-
-.hello {
-  background: settings.$color-mint;
-  color: #000;
+.intro-container {
+  font-size: 1.5rem;
+  padding: 3rem;
+  min-height: 50vh;
+  line-height: 1;
   position: relative;
+
+  @media (min-width: settings.$breakpoint-sm) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: settings.$breakpoint-md) {
+    font-size: 3rem;
+    min-height: 75vh;
+  }
+
+  @media (min-width: settings.$breakpoint-lg) {
+    font-size: 5rem;
+    min-height: 85vh;
+  }
 
   &::before {
     content: '';
@@ -101,21 +89,35 @@ window.addEventListener('scroll', reveal);
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/glacier-sm.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  h1 {
+    z-index: +1;
+    position: relative;
+  }
+}
+
+.hello {
+  background: settings.$color-mint;
+  color: #000;
+  position: relative;
+
+  &::before {
+    background-image: url('/glacier-sm.jpg');
     background-position: center;
     opacity: 0.3;
 
-    @media(min-width: 480px) {
+    @media(min-width: settings.$breakpoint-sm) {
       background-image: url('/glacier-md.jpg');
     }
 
-    @media(min-width: 768px) {
+    @media(min-width: settings.$breakpoint-md) {
       background-image: url('/glacier-lg.jpg');
     }
 
-    @media(min-width: 1024px) {
+    @media(min-width: settings.$breakpoint-lg) {
       background-image: url('/glacier-xl.jpg');
     }
   }
@@ -126,27 +128,19 @@ window.addEventListener('scroll', reveal);
   color: #000;
 
   &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image: url('/js-sm.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: right bottom;
     opacity: 0.4;
 
-    @media(min-width: 480px) {
+    @media(min-width: settings.$breakpoint-sm) {
       background-image: url('/js-md.jpg');
     }
 
-    @media(min-width: 768px) {
+    @media(min-width: settings.$breakpoint-md) {
       background-image: url('/js-lg.jpg');
     }
 
-    @media(min-width: 1024px) {
+    @media(min-width: settings.$breakpoint-lg) {
       background-image: url('/js-xl.jpg');
     }
   }
@@ -158,26 +152,19 @@ window.addEventListener('scroll', reveal);
 
   &::before {
     content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image: url('/circuit-sm.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
     opacity: 0.3;
 
-    @media(min-width: 480px) {
+    @media(min-width: settings.$breakpoint-sm) {
       background-image: url('/circuit-md.jpg');
     }
 
-    @media(min-width: 768px) {
+    @media(min-width: settings.$breakpoint-md) {
       background-image: url('/circuit-lg.jpg');
     }
 
-    @media(min-width: 1024px) {
+    @media(min-width: settings.$breakpoint-lg) {
       background-image: url('/circuit-xl.jpg');
     }
   }
@@ -188,27 +175,19 @@ window.addEventListener('scroll', reveal);
   color: #fff;
 
   &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image: url('/watercolor-sm.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: right bottom;
     opacity: 0.3;
 
-    @media(min-width: 480px) {
+    @media(min-width: settings.$breakpoint-sm) {
       background-image: url('/watercolor-md.jpg');
     }
 
-    @media(min-width: 768px) {
+    @media(min-width: settings.$breakpoint-md) {
       background-image: url('/watercolor-lg.jpg');
     }
 
-    @media(min-width: 1024px) {
+    @media(min-width: settings.$breakpoint-lg) {
       background-image: url('/watercolor-xl.jpg');
     }
   }
