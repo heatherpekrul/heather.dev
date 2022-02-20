@@ -101,22 +101,22 @@ window.addEventListener('scroll', reveal);
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('glacier-sm.jpg');
+    background-image: url('/glacier-sm.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     opacity: 0.3;
 
     @media(min-width: 480px) {
-      background-image: url('glacier-md.jpg');
+      background-image: url('/glacier-md.jpg');
     }
 
     @media(min-width: 768px) {
-      background-image: url('glacier-lg.jpg');
+      background-image: url('/glacier-lg.jpg');
     }
 
     @media(min-width: 1024px) {
-      background-image: url('glacier-xl.jpg');
+      background-image: url('/glacier-xl.jpg');
     }
   }
 }
@@ -132,22 +132,22 @@ window.addEventListener('scroll', reveal);
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('js-sm.jpg');
+    background-image: url('/js-sm.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right bottom;
     opacity: 0.4;
 
     @media(min-width: 480px) {
-      background-image: url('js-md.jpg');
+      background-image: url('/js-md.jpg');
     }
 
     @media(min-width: 768px) {
-      background-image: url('js-lg.jpg');
+      background-image: url('/js-lg.jpg');
     }
 
     @media(min-width: 1024px) {
-      background-image: url('js-xl.jpg');
+      background-image: url('/js-xl.jpg');
     }
   }
 }
@@ -163,22 +163,22 @@ window.addEventListener('scroll', reveal);
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('circuit-sm.jpg');
+    background-image: url('/circuit-sm.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     opacity: 0.3;
 
     @media(min-width: 480px) {
-      background-image: url('circuit-md.jpg');
+      background-image: url('/circuit-md.jpg');
     }
 
     @media(min-width: 768px) {
-      background-image: url('circuit-lg.jpg');
+      background-image: url('/circuit-lg.jpg');
     }
 
     @media(min-width: 1024px) {
-      background-image: url('circuit-xl.jpg');
+      background-image: url('/circuit-xl.jpg');
     }
   }
 }
@@ -194,22 +194,22 @@ window.addEventListener('scroll', reveal);
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('watercolor-sm.jpg');
+    background-image: url('/watercolor-sm.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right bottom;
     opacity: 0.3;
 
     @media(min-width: 480px) {
-      background-image: url('watercolor-md.jpg');
+      background-image: url('/watercolor-md.jpg');
     }
 
     @media(min-width: 768px) {
-      background-image: url('watercolor-lg.jpg');
+      background-image: url('/watercolor-lg.jpg');
     }
 
     @media(min-width: 1024px) {
-      background-image: url('watercolor-xl.jpg');
+      background-image: url('/watercolor-xl.jpg');
     }
   }
 }
