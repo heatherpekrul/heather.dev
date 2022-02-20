@@ -1,36 +1,21 @@
 # heather.dev
 
-[![Build Status](https://travis-ci.com/heatherpekrul/heather.dev.svg?branch=master)](https://travis-ci.com/heatherpekrul/heather.dev)
+The code behind [heather.dev](https://heather.dev).
 
-## Project setup
-```
-yarn install
-```
+## Local Development
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+### Recommended IDE Setup
 
-### Compiles and minifies for production
+- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+
+### Run local server
+
 ```
-yarn run build
+npm run dev
 ```
 
-### Run your tests
-```
-yarn run test
-```
+### Build
 
-### Lints and fixes files
 ```
-yarn run lint
+npm run build
 ```
-
-### Run your unit tests
-```
-yarn run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,0 +1,56 @@
+/* BREAKPOINTS */
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+/* TYPOGRAPHY */
+$font-size-base: 16px;
+
+@mixin font-accent() {
+    font-family: 'DM Serif Display', serif;
+}
+
+@mixin font-primary() {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin font-primary-weight-thin() {
+    font-weight: 100;
+}
+
+@mixin font-primary-weight-regular() {
+    font-weight: 400;
+}
+
+@mixin font-primary-weight-bold {
+    font-weight: 700;
+}
+
+@mixin line-hover {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #fff;
+    width: 0;
+    opacity: 0;
+    transition: 0.75s all ease;
+    }
+
+    &:hover,
+    &:focus {
+    &::after {
+        width: 100%;
+        opacity: 1;
+    }
+    }
+}
+
+/* COLORS */
+$color-onyx: #051622;
+$color-mint: #91F9E5;
+$color-saffron: #EAC435;
+$color-orange: #FB4D3D;
+$color-ruby: #CA1551;
