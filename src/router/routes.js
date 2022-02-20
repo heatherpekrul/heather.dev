@@ -30,5 +30,13 @@ export default [
             title: 'Work'
         },
         component: () => import('../views/Work.vue'),
+    },
+    {
+        path: '/:pathMatch(.*)',
+        name: 'ErrorView',
+        meta: {
+            title: 'Error'
+        },
+        component: () => import('../views/Error.vue'),
     }
   ];

@@ -64,6 +64,7 @@ export default {
       <a :href="this.url" rel="nofollow">
         {{ this.name }}
       </a>
+      - {{ this.title }}
     </h2>
 
     <div class="dates">

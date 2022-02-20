@@ -15,7 +15,7 @@ import PageHeader from '../components/PageHeader.vue';
           url="https://www.garmin.com"
           :startDate="new Date('2016-01-11T12:00:00Z')"
           :endDate="false"
-          title="Software Engineer"
+          title="Frontend Application Architect"
           :tags="['JavaScript', 'VueJS', 'CSS', 'SASS', 'HTML', 'Node.js', 'React', 'BackboneJS', 'PHP',
             'Wordpress', 'SEO', 'Accessibility', 'Express', 'MySQL', 'ElasticSearch', 'Redis', 'Typescript']"
           :projects="[
@@ -55,7 +55,7 @@ import PageHeader from '../components/PageHeader.vue';
       url="https://liftedlogic.com"
       :startDate="new Date('2014-09-01T12:00:00Z')"
       :endDate="new Date('2015-12-01T12:00:00Z')"
-      title="Developer, Developer Supervisor"
+      title="Developer"
       :tags="['Wordpress', 'JavaScript', 'CSS', 'SASS', 'HTML', 'Node.js',
         'PHP', 'SEO', 'jQuery', 'AngularJS', 'MongoDB', 'Express']"
       :projects="[
